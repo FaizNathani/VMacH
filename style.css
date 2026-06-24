@@ -916,10 +916,16 @@ section {
 
 .contact-side {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;      /* was: column */
+  flex-wrap: wrap;          /* add this so it wraps on small screens */
   gap: 20px;
+  align-items: stretch;     /* makes both cards equal height */
 }
+
 .contact-card {
+  flex: 1;
+  min-width: 260px;         /* wraps to single column on mobile */
+  /* keep all your existing styles below */
   background: #fff;
   border: 1px solid rgba(18,18,18,0.06);
   border-radius: var(--radius);
