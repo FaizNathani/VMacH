@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VMacH | The Campus Convenience Network</title>
+<meta name="description" content="Building the future of convenience for college students through smart vending and intelligent campus retail.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background ambient orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- NAVIGATION -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="logo.svg" alt="VMacH logo" class="nav-logo-img">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#why" class="nav-link">Why VMacH</a>
+      <a href="#how" class="nav-link">How It Works</a>
+      <a href="#colleges" class="nav-link">For Colleges</a>
+      <a href="#future" class="nav-link">Future Vision</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Partner With Us</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="mobile-link">Home</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#why" class="mobile-link">Why VMacH</a>
+  <a href="#how" class="mobile-link">How It Works</a>
+  <a href="#colleges" class="mobile-link">For Colleges</a>
+  <a href="#future" class="mobile-link">Future Vision</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <button class="nav-cta mobile-cta">Partner With Us</button>
+</div>
+
+<main>
+
+<!-- SECTION 1: HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="eyebrow fade-in">
+      <span class="eyebrow-arrow" aria-hidden="true">↗</span>
+      The Campus Convenience Network
+    </div>
+    <h1 class="hero-title fade-in">
+      Campus Convenience.<br>
+      <span class="gradient-text">Reimagined.</span>
+    </h1>
+    <p class="hero-sub fade-in">
+      The future of student convenience starts here.<br>
+      Smart vending. Smarter campuses. Better student experiences.
+    </p>
+    <div class="hero-actions fade-in">
+      <a href="#about" class="btn btn-primary">
+        Explore VMacH <span class="btn-arrow">→</span>
+      </a>
+      <a href="#contact" class="btn btn-secondary">Partner With Us</a>
+    </div>
+  </div>
+
+  <div class="hero-visual fade-in">
+    <svg viewBox="0 0 600 600" class="hero-illustration" aria-hidden="true">
+      <!-- Diagonal grid lines -->
+      <g class="hv-lines" stroke-width="1" fill="none" opacity="0.25">
+        <line x1="0" y1="500" x2="600" y2="100" stroke="url(#lineGrad)"/>
+        <line x1="0" y1="600" x2="600" y2="200" stroke="url(#lineGrad)"/>
+        <line x1="100" y1="600" x2="600" y2="0" stroke="url(#lineGrad)"/>
+      </g>
+
+      <!-- Campus building blocks -->
+      <g class="hv-buildings">
+        <rect x="60" y="380" width="80" height="160" rx="6" fill="url(#cardGrad)" opacity="0.85"/>
+        <rect x="160" y="320" width="70" height="220" rx="6" fill="url(#cardGrad2)" opacity="0.7"/>
+        <rect x="450" y="350" width="90" height="190" rx="6" fill="url(#cardGrad)" opacity="0.6"/>
+      </g>
+
+      <!-- Vending machine -->
+      <g class="hv-vending">
+        <rect x="250" y="260" width="120" height="220" rx="14" fill="#121212"/>
+        <rect x="262" y="276" width="96" height="120" rx="8" fill="url(#screenGrad)" />
+        <g stroke="#FAFAFA" stroke-width="2" opacity="0.5">
+          <line x1="278" y1="296" x2="278" y2="380"/>
+          <line x1="298" y1="296" x2="298" y2="380"/>
+          <line x1="318" y1="296" x2="318" y2="380"/>
+          <line x1="338" y1="296" x2="338" y2="380"/>
+        </g>
+        <rect x="262" y="408" width="44" height="44" rx="8" fill="#1f1f1f"/>
+        <rect x="314" y="408" width="44" height="44" rx="8" fill="#1f1f1f"/>
+        <circle class="pulse-dot" cx="358" cy="288" r="6" fill="#C8FF4D"/>
+      </g>
+
+      <!-- Floating connection nodes -->
+      <g class="hv-nodes">
+        <circle class="float-slow" cx="120" cy="180" r="22" fill="url(#nodeGrad)" opacity="0.9"/>
+        <circle class="float-med" cx="480" cy="160" r="16" fill="url(#nodeGrad2)" opacity="0.85"/>
+        <circle class="float-fast" cx="420" cy="430" r="12" fill="#00E5FF" opacity="0.8"/>
+        <path class="hv-dash" d="M142 180 Q 250 120 360 286" stroke="url(#lineGrad)" stroke-width="2" fill="none" stroke-dasharray="6 8" opacity="0.6"/>
+        <path class="hv-dash" d="M464 168 Q 400 220 366 290" stroke="url(#lineGrad)" stroke-width="2" fill="none" stroke-dasharray="6 8" opacity="0.6"/>
+      </g>
+
+      <!-- Logo-inspired arrow flying through -->
+      <g class="hv-arrow float-med">
+        <path d="M180 460 L320 200" stroke="url(#arrowGrad)" stroke-width="6" stroke-linecap="round"/>
+        <path d="M290 195 L335 190 L325 235 Z" fill="url(#arrowGrad)"/>
+      </g>
+
+      <!-- Floating geometric shapes inspired by logo -->
+      <polygon class="float-slow" points="500,440 540,420 540,470" fill="#FF5FBF" opacity="0.7"/>
+      <rect class="float-fast" x="40" y="60" width="34" height="34" rx="6" fill="#7B61FF" opacity="0.6" transform="rotate(20 57 77)"/>
+
+      <defs>
+        <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#7B61FF"/>
+          <stop offset="50%" stop-color="#FF5FBF"/>
+          <stop offset="100%" stop-color="#00E5FF"/>
+        </linearGradient>
+        <linearGradient id="arrowGrad" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0%" stop-color="#7B61FF"/>
+          <stop offset="100%" stop-color="#00E5FF"/>
+        </linearGradient>
+        <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#7B61FF"/>
+          <stop offset="100%" stop-color="#FF5FBF"/>
+        </linearGradient>
+        <linearGradient id="cardGrad2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FF5FBF"/>
+          <stop offset="100%" stop-color="#00E5FF"/>
+        </linearGradient>
+        <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#7B61FF"/>
+          <stop offset="100%" stop-color="#00E5FF"/>
+        </linearGradient>
+        <radialGradient id="nodeGrad">
+          <stop offset="0%" stop-color="#C8FF4D"/>
+          <stop offset="100%" stop-color="#00E5FF"/>
+        </radialGradient>
+        <radialGradient id="nodeGrad2">
+          <stop offset="0%" stop-color="#FF5FBF"/>
+          <stop offset="100%" stop-color="#7B61FF"/>
+        </radialGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="scroll-indicator fade-in">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- SECTION 2: ABOUT -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="section-eyebrow fade-in"><span class="eyebrow-num">01</span> About VMacH</div>
+    <h2 class="section-title fade-in">More Than A <span class="gradient-text">Vending Machine</span></h2>
+    <p class="section-lead fade-in">
+      VMacH is building a smarter way for students to access everyday essentials.
+      We combine intelligent vending, student insights, and campus-focused convenience
+      to create a connected retail experience designed for modern student life.
+    </p>
+
+    <div class="about-grid">
+      <div class="about-card fade-in">
+        <div class="about-icon icon-vending" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><rect x="8" y="4" width="32" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/><line x1="16" y1="14" x2="16" y2="30" stroke="currentColor" stroke-width="2.5"/><line x1="24" y1="14" x2="24" y2="30" stroke="currentColor" stroke-width="2.5"/><line x1="32" y1="14" x2="32" y2="30" stroke="currentColor" stroke-width="2.5"/><rect x="14" y="34" width="8" height="6" rx="1" fill="currentColor"/><rect x="26" y="34" width="8" height="6" rx="1" fill="currentColor"/></svg>
+        </div>
+        <h3>Intelligent Vending</h3>
+        <p>Hardware that adapts to what students actually want, in real time.</p>
+      </div>
+      <div class="about-card fade-in">
+        <div class="about-icon icon-data" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M6 38 L18 24 L28 32 L42 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 12 L42 12 L42 22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Student Insights</h3>
+        <p>Demand signals from every campus shape what gets stocked next.</p>
+      </div>
+      <div class="about-card fade-in">
+        <div class="about-icon icon-network" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="10" r="5" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="10" cy="36" r="5" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="38" cy="36" r="5" fill="none" stroke="currentColor" stroke-width="2.5"/><line x1="21" y1="14" x2="13" y2="32" stroke="currentColor" stroke-width="2.5"/><line x1="27" y1="14" x2="35" y2="32" stroke="currentColor" stroke-width="2.5"/><line x1="15" y1="36" x2="33" y2="36" stroke="currentColor" stroke-width="2.5"/></svg>
+        </div>
+        <h3>Connected Network</h3>
+        <p>Every machine and campus, linked into a single growing platform.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: WHY VMACH -->
+<section class="why" id="why">
+  <div class="section-inner">
+    <div class="section-eyebrow fade-in"><span class="eyebrow-num">02</span> Why VMacH</div>
+    <h2 class="section-title fade-in">Built Around <span class="gradient-text">Students</span></h2>
+
+    <div class="why-grid">
+      <div class="why-card fade-in">
+        <div class="why-arrow" aria-hidden="true">↗</div>
+        <h3>Student Driven</h3>
+        <p>Every campus has different needs.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-arrow" aria-hidden="true">↗</div>
+        <h3>Fast &amp; Convenient</h3>
+        <p>Grab what you need in seconds.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-arrow" aria-hidden="true">↗</div>
+        <h3>Data Powered</h3>
+        <p>Machines evolve based on student demand.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-arrow" aria-hidden="true">↗</div>
+        <h3>Future Ready</h3>
+        <p>Designed for the next generation of campus commerce.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="section-inner">
+    <div class="section-eyebrow fade-in"><span class="eyebrow-num">03</span> How It Works</div>
+    <h2 class="section-title fade-in">From Vote To <span class="gradient-text">Better Choices</span></h2>
+
+    <div class="timeline">
+      <div class="timeline-track" aria-hidden="true">
+        <div class="timeline-progress"></div>
+      </div>
+      <div class="timeline-step fade-in">
+        <div class="step-marker">01</div>
+        <h3>Students Vote</h3>
+        <p>Students tell us what they actually want stocked.</p>
+      </div>
+      <div class="timeline-step fade-in">
+        <div class="step-marker">02</div>
+        <h3>VMacH Learns</h3>
+        <p>Our system analyzes demand patterns across campus.</p>
+      </div>
+      <div class="timeline-step fade-in">
+        <div class="step-marker">03</div>
+        <h3>Machines Are Stocked</h3>
+        <p>Inventory updates to match real student preferences.</p>
+      </div>
+      <div class="timeline-step fade-in">
+        <div class="step-marker">04</div>
+        <h3>Students Enjoy Better Choices</h3>
+        <p>The network keeps improving, campus by campus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: FOR COLLEGES -->
+<section class="colleges" id="colleges">
+  <div class="section-inner">
+    <div class="section-eyebrow fade-in"><span class="eyebrow-num">04</span> For Colleges</div>
+    <h2 class="section-title fade-in">Why Colleges Choose <span class="gradient-text">VMacH</span></h2>
+
+    <div class="colleges-grid">
+      <div class="college-card fade-in">
+        <div class="college-arrow" aria-hidden="true">↗</div>
+        <h3>No Operational Burden</h3>
+        <p>We handle stocking, maintenance, and support — campuses just host the machines.</p>
+      </div>
+      <div class="college-card fade-in">
+        <div class="college-arrow" aria-hidden="true">↗</div>
+        <h3>Improved Student Experience</h3>
+        <p>Faster access to snacks, drinks, and essentials around the clock.</p>
+      </div>
+      <div class="college-card fade-in">
+        <div class="college-arrow" aria-hidden="true">↗</div>
+        <h3>Modern Campus Image</h3>
+        <p>Sleek, tech-forward machines that reflect a forward-thinking campus.</p>
+      </div>
+      <div class="college-card fade-in">
+        <div class="college-arrow" aria-hidden="true">↗</div>
+        <h3>Data-Driven Selection</h3>
+        <p>Product mixes shaped by real demand from your student body.</p>
+      </div>
+      <div class="college-card fade-in">
+        <div class="college-arrow" aria-hidden="true">↗</div>
+        <h3>Revenue-Sharing Opportunities</h3>
+        <p>A new line of campus revenue with zero added overhead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: FUTURE VISION -->
+<section class="future" id="future">
+  <div class="future-bg" aria-hidden="true"></div>
+  <div class="section-inner">
+    <div class="section-eyebrow fade-in light"><span class="eyebrow-num">05</span> Future Vision</div>
+    <h2 class="section-title light fade-in">The Campus <span class="gradient-text">Convenience Network</span></h2>
+    <p class="section-lead light fade-in">
+      VMacH starts with smart vending — but the network keeps growing.
+    </p>
+
+    <div class="roadmap">
+      <svg class="roadmap-line" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 80 L180 60 L360 70 L540 30 L720 40 L1000 5" stroke="url(#roadGrad)" stroke-width="3" fill="none" stroke-dasharray="8 8" class="roadmap-path"/>
+        <defs>
+          <linearGradient id="roadGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#7B61FF"/>
+            <stop offset="50%" stop-color="#FF5FBF"/>
+            <stop offset="100%" stop-color="#C8FF4D"/>
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="roadmap-items">
+        <div class="roadmap-item fade-in">
+          <div class="roadmap-dot active"></div>
+          <span class="roadmap-phase">Phase 1</span>
+          <h3>Smart Vending</h3>
+        </div>
+        <div class="roadmap-item fade-in">
+          <div class="roadmap-dot"></div>
+          <span class="roadmap-phase">Phase 2</span>
+          <h3>Campus Analytics</h3>
+        </div>
+        <div class="roadmap-item fade-in">
+          <div class="roadmap-dot"></div>
+          <span class="roadmap-phase">Phase 3</span>
+          <h3>Student Rewards</h3>
+        </div>
+        <div class="roadmap-item fade-in">
+          <div class="roadmap-dot"></div>
+          <span class="roadmap-phase">Phase 4</span>
+          <h3>Campus Commerce Platform</h3>
+        </div>
+        <div class="roadmap-item fade-in">
+          <div class="roadmap-dot"></div>
+          <span class="roadmap-phase">Phase 5</span>
+          <h3>Connected Campus Infrastructure</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: CONTACT -->
+<<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="section-eyebrow fade-in"><span class="eyebrow-num">06</span> Contact</div>
+    <h2 class="section-title fade-in">Let's Build The <span class="gradient-text">Future Together</span></h2>
+    <p class="section-lead fade-in">
+      Whether you're a student, a campus partner, or just curious — we'd love to hear from you.
+    </p>
+
+    <!-- <div class="contact-grid">
+      <form class="contact-form fade-in" id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@university.edu" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">
+          Send Message <span class="btn-arrow">→</span>
+        </button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form> -->
+
+      <div class="contact-side fade-in" style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+        <div class="contact-card" style="flex: 1; min-width: 200px;">
+          <h3>Follow VMacH</h3>
+          <div class="social-links">
+            <a href="#" class="social-link">Instagram <span class="btn-arrow">↗</span></a>
+            <a href="https://www.linkedin.com/company/131633982/" target="_blank" rel="noopener" class="social-link">LinkedIn <span class="btn-arrow">↗</span></a>
+          </div>
+        </div>
+        <div class="contact-card highlight-card" style="flex: 1; min-width: 200px;">
+          <h3>For Colleges &amp; Partners</h3>
+          <p>Interested in bringing VMacH to your campus? Reach out and our team will follow up within 48 hours.</p>
+          <a href="mailto:faiz@arshad.email" class="btn btn-secondary" id="emailBtn"
+             onclick="copyEmail(event)">faiz@arshad.email</a>
+          <span id="copyMsg" style="display:none; font-size:13px; margin-left:8px; color: rgb(243, 238, 238);">Copied!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyEmail(e) {
+  e.preventDefault();
+  navigator.clipboard.writeText('faiz@arshad.email').then(() => {
+    const msg = document.getElementById('copyMsg');
+    msg.style.display = 'inline';
+    setTimeout(() => msg.style.display = 'none', 2000);
+  });
+}
+</script>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <a href="#home" class="nav-logo footer-logo">
+      <img src="logo.svg" alt="VMacH logo" class="nav-logo-img footer-logo-img">
+    </a>
+    <p class="footer-tag">The Campus Convenience Network</p>
+    <p class="footer-copy">© 2026 VMacH. Building the future of campus convenience.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
