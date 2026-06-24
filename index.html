@@ -21,7 +21,7 @@
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="#home" class="nav-logo">
-      <img src="assets/logo.svg" alt="VMacH logo" class="nav-logo-img">
+      <img src="logo.svg" alt="VMacH logo" class="nav-logo-img">
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="#home" class="nav-link active">Home</a>
@@ -359,7 +359,7 @@
 </section>
 
 <!-- SECTION 7: CONTACT -->
-<section class="contact" id="contact">
+<<section class="contact" id="contact">
   <div class="section-inner">
     <div class="section-eyebrow fade-in"><span class="eyebrow-num">06</span> Contact</div>
     <h2 class="section-title fade-in">Let's Build The <span class="gradient-text">Future Together</span></h2>
@@ -367,7 +367,7 @@
       Whether you're a student, a campus partner, or just curious — we'd love to hear from you.
     </p>
 
-    <div class="contact-grid">
+    <!-- <div class="contact-grid">
       <form class="contact-form fade-in" id="contactForm">
         <div class="form-group">
           <label for="name">Name</label>
@@ -385,27 +385,38 @@
           Send Message <span class="btn-arrow">→</span>
         </button>
         <p class="form-status" id="formStatus" role="status"></p>
-      </form>
+      </form> -->
 
-      <div class="contact-side fade-in">
-        <div class="contact-card">
+      <div class="contact-side fade-in" style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+        <div class="contact-card" style="flex: 1; min-width: 200px;">
           <h3>Follow VMacH</h3>
           <div class="social-links">
             <a href="#" class="social-link">Instagram <span class="btn-arrow">↗</span></a>
             <a href="https://www.linkedin.com/company/131633982/" target="_blank" rel="noopener" class="social-link">LinkedIn <span class="btn-arrow">↗</span></a>
-            <a href="#" class="social-link">TikTok <span class="btn-arrow">↗</span></a>
-            <a href="#" class="social-link">X (Twitter) <span class="btn-arrow">↗</span></a>
           </div>
         </div>
-        <div class="contact-card highlight-card">
+        <div class="contact-card highlight-card" style="flex: 1; min-width: 200px;">
           <h3>For Colleges &amp; Partners</h3>
           <p>Interested in bringing VMacH to your campus? Reach out and our team will follow up within 48 hours.</p>
-          <a href="mailto:faiz@arshad.email" class="btn btn-secondary">faiz@arshad.email</a>
+          <a href="mailto:faiz@arshad.email" class="btn btn-secondary" id="emailBtn"
+             onclick="copyEmail(event)">faiz@arshad.email</a>
+          <span id="copyMsg" style="display:none; font-size:13px; margin-left:8px; color: rgb(243, 238, 238);">Copied!</span>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+function copyEmail(e) {
+  e.preventDefault();
+  navigator.clipboard.writeText('faiz@arshad.email').then(() => {
+    const msg = document.getElementById('copyMsg');
+    msg.style.display = 'inline';
+    setTimeout(() => msg.style.display = 'none', 2000);
+  });
+}
+</script>
 
 </main>
 
@@ -413,7 +424,7 @@
 <footer class="footer">
   <div class="section-inner footer-inner">
     <a href="#home" class="nav-logo footer-logo">
-      <img src="assets/logo.svg" alt="VMacH logo" class="nav-logo-img footer-logo-img">
+      <img src="logo.svg" alt="VMacH logo" class="nav-logo-img footer-logo-img">
     </a>
     <p class="footer-tag">The Campus Convenience Network</p>
     <p class="footer-copy">© 2026 VMacH. Building the future of campus convenience.</p>
